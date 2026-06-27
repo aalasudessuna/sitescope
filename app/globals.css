@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+body {
+  background-color: #0a0e0c;
+  background-image:
+    radial-gradient(circle at 15% 0%, rgba(61, 220, 151, 0.10), transparent 45%),
+    radial-gradient(circle at 85% 15%, rgba(255, 139, 107, 0.08), transparent 40%);
+  color: #d6ffe8;
+}
+
+::selection {
+  background-color: rgba(61, 220, 151, 0.3);
+}
+
+.glass {
+  background: rgba(17, 32, 26, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+}
